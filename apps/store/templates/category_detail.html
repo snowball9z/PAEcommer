@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ category.title }} | {% endblock%}
+
+{% block content %}
+    <h1 class="title">{{ category.title }}</h1>
+
+    {% with products as list_products %}
+        {% include 'parts/product_list.html' %}
+    {% endwith %}
+
+{% endblock %}

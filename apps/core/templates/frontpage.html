@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Wellcome | {% endblock%}
+
+{% block content %}
+    {% with products as list_products %}
+        {% include 'parts/product_list.html' %}
+    {% endwith %}
+{% endblock %}
